@@ -335,6 +335,10 @@ input[type=range]:focus::-ms-fill-upper {
     clear: both;
 }
 
+.sj-hide {
+    display: none;   
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -426,8 +430,4 @@ input[type=range]:focus::-ms-fill-upper {
     h3 {
         page-break-after: avoid;
     }
-}
-
-#step-by-edge {
-    display: none;
 }
