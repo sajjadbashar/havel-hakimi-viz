@@ -429,5 +429,5 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #step-by-edge {
-    displaye: none;
+    display: none;
 }
