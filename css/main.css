@@ -427,3 +427,7 @@ input[type=range]:focus::-ms-fill-upper {
         page-break-after: avoid;
     }
 }
+
+#step-by-edge {
+    displaye: none;
+}
