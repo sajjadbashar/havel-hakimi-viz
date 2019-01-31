@@ -28,7 +28,14 @@
         <script src="js/plugins.js"></script>
         <script defer src="js/main.js"></script>
 <div>
-  
+
+  <div style="background: #EEE; font-size: 12pt; padding: 8px; margin-bottom: 32px;">
+    
+    This is a visualization of <a href="https://en.wikipedia.org/wiki/Havel%E2%80%93Hakimi_algorithm">Havel-Hakimi algorithm</a>. By entering a sequence of degrees for a graph, you can see and control how various graphs could be made, given the sequence is valid; e.g. 3,2,2,1 is valid a sequence and 4,3,1,1 is not.
+    You can select a degree from the top or bottom of the stack or randomly.
+ 
+  </div>
+
 <form>
 
   <div class="d-flex justify-content-center space-after" >
@@ -83,6 +90,8 @@
     <input id="step-by-node" class="button-primary button-draw" type="submit" value="Step By Node">
     <div class="divider-line"></div>
     <input id="final-graph" class="button-primary button-draw" type="submit" value="Final Graph">
+    <div class="divider-line"></div>
+    <input id="reset" class="button-primary button-draw" type="submit" value="Reset">
   </div>
   
 </form>

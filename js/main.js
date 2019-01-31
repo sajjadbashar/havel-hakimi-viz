@@ -322,18 +322,38 @@ $('#place-method').on('change', function(e) { e.preventDefault(); placeMethod = 
 
 $('#step-by-edge').on('click', function(e) {
   e.preventDefault();
-  stepSize = STEP_BY_EDGE;
-  generateGraph(seq);
+  if (isGraphic(seq.slice(0))) {
+    stepSize = STEP_BY_EDGE;
+    generateGraph(seq);
+  } else {
+    alert("This sequence is not graphic!");
+  }
 });
 
 $('#step-by-node').on('click', function(e) {
   e.preventDefault();
-  stepSize = STEP_BY_NODE;
-  generateGraph(seq);
+  if (isGraphic(seq.slice(0))) {
+    stepSize = STEP_BY_NODE;
+    generateGraph(seq);
+  } else {
+    alert("This sequence is not graphic!");
+  }
 });
 
 $('#final-graph').on('click', function(e) {
   e.preventDefault();
-  stepSize = FINAL_GRAPH;
-  generateGraph(seq);
+  if (isGraphic(seq.slice(0))) {
+      stepSize = FINAL_GRAPH;
+      generateGraph(seq);
+  } else {
+    alert("This sequence is not graphic!");
+  }
+
+});
+
+$('#reset').on('click', function(e) {
+  e.preventDefault();
+  seq.length = 0;
+  $('#graphs').text('');
+  $('#seq-string').text('');
 });
